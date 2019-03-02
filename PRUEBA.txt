@@ -1,5 +1,17 @@
-<<<<<<< HEAD
-Roberto Alejandro Martinez Cornejo
-=======
-Bernardo Carlos García 
->>>>>>> 254796fdc44d34cbe0737e9b0c28bb787a8bf2af
+<?xml version="1.0" encoding="UTF-8"?>
+<api context="/healthcare" name="HealthcareAPI" xmlns="http://ws.apache.org/ns/synapse">
+    <resource methods="GET" uri-template="/querydoctor/{category}">
+        <inSequence>
+            <log description="Message" level="custom">
+                <property name="message" value="Welcome to HealthcareService"/>
+            </log>
+            <send>
+                <endpoint key="QueryDoctorEP"/>
+            </send>
+        </inSequence>
+        <outSequence>
+            <send/>
+        </outSequence>
+        <faultSequence/>
+    </resource>
+</api>
