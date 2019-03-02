@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 Roberto Alejandro Martinez Cornejo
+=======
+Bernardo Carlos García 
+>>>>>>> 254796fdc44d34cbe0737e9b0c28bb787a8bf2af
